@@ -29,7 +29,7 @@ All analysis can be grounded in real‑world documents (policies, filings, repor
 ![RAG Pipeline](assets/RAG_pipeline.png)
 ```
 ```
-##  Key Capabilities
+##  Key Capabilities of trade agent
 
 - **RAG on Indian government & regulatory sources** (Ministry of Commerce, SEBI, RBI)
 - **Multi‑agent reasoning** with clear separation of concerns
