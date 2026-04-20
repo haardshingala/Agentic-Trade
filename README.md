@@ -74,7 +74,7 @@ For questions, suggestions, or collaborations, please reach out to: **conpectwor
 
 ---
 
-## 📄 License
+##  License
 
 MIT
 
