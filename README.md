@@ -61,7 +61,7 @@ All analysis can be grounded in real‑world documents (policies, filings, repor
 
 - Real‑time data feeds
 - Reinforcement learning for adaptive strategies
-- Cross‑market expansion (global equities, crypto, FX)
+- Cross‑market expansion (global equities)
 
 ---
 
