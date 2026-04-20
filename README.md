@@ -19,6 +19,15 @@ Instead of a single model, the system uses **specialised agents** that collabora
 All analysis can be grounded in real‑world documents (policies, filings, reports) via RAG.
 
 ---
+##  Architecture Overview
+
+### Multi‑Agent Trading Pipeline
+![Trading Agent Graph](assets/TradingAgent_graph.png)
+
+### RAG‑Based Sector Analysis Pipeline
+![RAG Pipeline](assets/RAG_pipeline.png)
+
+---
 
 ##  Key Capabilities
 
