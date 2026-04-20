@@ -14,7 +14,7 @@ Instead of a single model, the system uses **specialised agents** that collabora
 - **Bull vs. Bear researchers** debate each opportunity.
 - A **Research Manager** synthesises the arguments.
 - **Risk profiles** (aggressive / conservative) determine the final strategy.
-- A **Portfolio Manager** allocates assets.
+- A **Portfolio Manager** allocates assets visualizing the real time news and data.
 
 All analysis can be grounded in real‑world documents (policies, filings, reports) via RAG.
 
