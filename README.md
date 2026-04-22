@@ -18,7 +18,6 @@ Instead of a single model, the system uses **specialised agents** that collabora
 
 All analysis can be grounded in real‑world documents (policies, filings, reports) via RAG.
 
-```
 ##  Key Capabilities of trade agent
 
 - **RAG on Indian government & regulatory sources** (Ministry of Commerce, SEBI, RBI)
