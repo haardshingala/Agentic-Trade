@@ -14,8 +14,23 @@ def run_market_analyst(state: AgentState) -> dict:
 
 def run_technical_analyst(state : AgentState) -> dict:
     result = technical_analyst.run(ticker=state["ticker_of_company"])
-    return {"technical_analysis_report" : result} 
+    return {"technical_analyst_report" : result} 
 
 def run_news_analyst(state: AgentState) -> dict:
-    result = news_analyst.run()
+    result = news_analyst.run(ticker=state["ticker_of_company"])
     return {"news_analyst_report": result}
+
+def run_aggregator(state: AgentState) -> dict:
+  
+    market_data = state.get("market_data")
+    technical_data = state.get("technical_data")
+    news_data = state.get("news_data")
+    
+    final_report = f"""
+    ### FINAL SUMMARY
+    - Market Status: {market_data}
+    - Technical Analysis: {technical_data}
+    - News Sentiment: {news_data}
+    
+    """
+    return {"final_report": final_report}
