@@ -230,57 +230,56 @@ def get_global_market_news() -> Dict:
             "message" : str(e),
         }
 
-# Example
+
+
 # if __name__ == "__main__":
-#     print(get_company_news("RELIANCE.NS", limit=5))
-if __name__ == "__main__":
-    import json
+#     import json
 
-    print("\n" + "═"*60)
-    print("  TEST 1 — Company News")
-    print("═"*60)
+#     print("\n" + "═"*60)
+#     print("  TEST 1 — Company News")
+#     print("═"*60)
 
-    result = get_company_news(
-        "RELIANCE.NS", limit=5
-    )
+#     result = get_company_news(
+#         "RELIANCE.NS", limit=5
+#     )
 
-    print(f"  Articles: {len(result.get('articles', []))}")
-    for a in result.get("articles", []):
-        print(f"  - {a['title']}")
-        print(f"    {a['source']} | {a.get('published_at', a.get('date', 'N/A'))}")
+#     print(f"  Articles: {len(result.get('articles', []))}")
+#     for a in result.get("articles", []):
+#         print(f"  - {a['title']}")
+#         print(f"    {a['source']} | {a.get('published_at', a.get('date', 'N/A'))}")
 
-    print("\n" + "═"*60)
-    print("  TEST 2 — Indian Market News")
-    print("═"*60)
+#     print("\n" + "═"*60)
+#     print("  TEST 2 — Indian Market News")
+#     print("═"*60)
 
-    result = get_indian_market_news()
+#     result = get_indian_market_news()
 
-    print(f"  Summary  : {result.get('ai_summary', '')[:150]}...")
-    for a in result.get("articles", []):
-        print(f"  [{a['priority'].upper():6}] {a['title']}")
-        print(f"           {a['source']} | {a.get('published_at', a.get('date', 'N/A'))}")
+#     print(f"  Summary  : {result.get('ai_summary', '')[:150]}...")
+#     for a in result.get("articles", []):
+#         print(f"  [{a['priority'].upper():6}] {a['title']}")
+#         print(f"           {a['source']} | {a.get('published_at', a.get('date', 'N/A'))}")
 
-    print("\n" + "═"*60)
-    print("  TEST 3 — Global Market News")
-    print("═"*60)
+#     print("\n" + "═"*60)
+#     print("  TEST 3 — Global Market News")
+#     print("═"*60)
 
-    result = get_global_market_news()
+#     result = get_global_market_news()
 
-    print(f"  Summary  : {result.get('ai_summary', '')[:150]}...")
-    for a in result.get("articles", []):
-        print(f"  [{a['priority'].upper():6}] {a['title']}")
-        print(f"           {a['source']} | {a.get('published_at', a.get('date', 'N/A'))}")
+#     print(f"  Summary  : {result.get('ai_summary', '')[:150]}...")
+#     for a in result.get("articles", []):
+#         print(f"  [{a['priority'].upper():6}] {a['title']}")
+#         print(f"           {a['source']} | {a.get('published_at', a.get('date', 'N/A'))}")
 
-    # Save full output
-    print("\n  Saving full output to news_test_output.json...")
+#     # Save full output
+#     print("\n  Saving full output to news_test_output.json...")
 
-    with open("check/news/news_test_output.json", "w", encoding="utf-8") as f:
-        json.dump({
-            "company_news": get_company_news(
-               "RELIANCE.NS", limit=5
-            ),
-            "indian_news": get_indian_market_news(),
-            "global_news": get_global_market_news(),
-        }, f, indent=2, ensure_ascii=False)
+#     with open("check/news/news_test_output.json", "w", encoding="utf-8") as f:
+#         json.dump({
+#             "company_news": get_company_news(
+#                "RELIANCE.NS", limit=5
+#             ),
+#             "indian_news": get_indian_market_news(),
+#             "global_news": get_global_market_news(),
+#         }, f, indent=2, ensure_ascii=False)
 
-    print("  Saved ✅")
+#     print("  Saved")
